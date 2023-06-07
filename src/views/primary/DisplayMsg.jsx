@@ -1,6 +1,6 @@
-
 import { BarLoader } from 'react-spinners';
 import { Link } from 'react-router-dom';
+import sprite from '../../assets/sprite.svg';
 
 import { feaCoursesImage } from '../../data/imgPoolList';
 const imgdev = feaCoursesImage[0].webdev;
@@ -27,14 +27,18 @@ export function DisplayMsg() {
             </div>
           )}
         </div>
-        <br />
-        <br />
-        <Link to='/' className='nav-link'>
-          Home Page
-        </Link>
+        <div className='gotohome'>
+          <svg className='svg-icon '>
+            <use
+              className='icon-chevron-thin-left'
+              xlinkHref={`${sprite}#icon-chevron-thin-left`}
+            />
+          </svg>
+          <Link to='/' className='nav-link'>
+            Home Page
+          </Link>
+        </div>
       </div>
     </div>
   );
 }
-
-

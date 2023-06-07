@@ -30,11 +30,21 @@ export const Footer = () => {
                 />
               </svg>
             </a>
+
+            <a href='https://www.instagram.com/skyinnk/' target='_blank'>
+              <svg className='footer-icon'>
+                <use
+                  className='icon-instagram'
+                  xlinkHref={`${sprite}#icon-instagram`}
+                />
+              </svg>
+            </a>
           </div>
-          <h3>Subscribe for Demo Class</h3>
+          <h3>Subscribe For Demo Class</h3>
         </div>
 
         <div className='contect'>
+          <h4>Contact Us</h4>
           <div className='contect-flex'>
             <svg className='footer-icon-contect'>
               <use className='icon-chat' xlinkHref={`${sprite}#icon-chat`} />
@@ -61,6 +71,7 @@ export const Footer = () => {
         </div>
 
         <div className='implinks'>
+          <h4>Some Useful Links</h4>
           <ul>
             <li>
               <a href='https://ncert.nic.in/textbook.php' target='_blank'>
@@ -88,8 +99,9 @@ export const Footer = () => {
         </div>
 
         <div className='tradmrk'>
-          <p>SKYINNK EXPRESSIVE LEARNING&trade;</p>
-          <p>All rights reserved</p>
+          <h4>&trade;</h4>
+          <p>skyinnk expressive learning </p>
+          <p>All rights reserved &trade;</p>
         </div>
       </section>
     </div>

@@ -204,6 +204,7 @@ button:active {
 }
 .footer-icon .icon-facebook2 {
   fill: var(--blue-500);
+  fill: #006aff;
 }
 
 .footer-icon-contect {
@@ -218,6 +219,14 @@ button:active {
 }
 .footer-icon-contect .icon-envelop {
   fill: var(--cyan1);
+}
+
+.icon-chevron-thin-left {
+  fill: #2600ff;
+}
+
+.icon-instagram {
+  fill: rgb(255, 144, 205);
 }
 
 .sel-title {
@@ -294,6 +303,14 @@ button:active {
   margin-bottom: 5rem;
 }
 
+.gotohome {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
 .headerBG {
   background-color: var(--white);
 }
@@ -328,7 +345,7 @@ button:active {
 }
 
 .footerbg {
-  background-color: var(--grey-600);
+  background-color: var(--grey-700);
 }
 
 .footer-section {
@@ -355,18 +372,21 @@ button:active {
     grid-template-columns: 1fr;
   }
 }
+.footer-section h4 {
+  color: aliceblue;
+}
 
 .followus {
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .followus .icans {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 1rem;
 }
 .followus h3 {
   color: aqua;
@@ -375,7 +395,7 @@ button:active {
 .contect-flex {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .contect-flex p {
   color: aliceblue;
@@ -384,10 +404,11 @@ button:active {
 
 .implinks {
   display: flex;
+  flex-direction: column;
   align-items: start;
 }
 .implinks li {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .implinks a {
   color: aliceblue;
@@ -403,7 +424,6 @@ button:active {
   color: var(--white);
   font-size: 1.4rem;
   margin-bottom: 2rem;
-  text-decoration: underline;
 }
 
 .display-section {

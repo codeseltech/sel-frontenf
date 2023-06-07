@@ -39,13 +39,14 @@
   }
   .icon-facebook2 {
     fill: var(--blue-500);
+    fill: #006aff;
+    //  stroke: var(--white);
   }
-
 }
 .footer-icon-contect {
   width: 4rem;
   height: 3rem;
-    .icon-chat {
+  .icon-chat {
     fill: var(--cyan1);
   }
   .icon-phone {
@@ -54,4 +55,10 @@
   .icon-envelop {
     fill: var(--cyan1);
   }
+}
+.icon-chevron-thin-left {
+  fill: #2600ff;
+}
+.icon-instagram{
+  fill: rgb(255, 144, 205);
 }

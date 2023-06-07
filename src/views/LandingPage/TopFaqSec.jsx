@@ -19,9 +19,9 @@ const data = {
 
 const styles = {
   bgColor: '#fff',
-  titleTextColor: 'blue',
+  titleTextColor: '#000',
   rowTitleColor: '#2196f3',
-  rowContentColor: '#0f172a',
+  rowContentColor: '#000',
   arrowColor: '#e91e63',
   rowContentPaddingBottom: '10px',
   rowContentPaddingLeft: '10px',

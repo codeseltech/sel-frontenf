@@ -1,5 +1,5 @@
 .footerbg {
-  background-color: var(--grey-600);
+  background-color: var(--grey-700);
 }
 .footer-section {
   display: grid;
@@ -20,6 +20,9 @@
   @include respond(phone) {
     grid-template-columns: 1fr;
   }
+  h4 {
+    color: aliceblue;
+  }
 }
 
 .followus {
@@ -28,12 +31,12 @@
 
   flex-direction: column;
   //   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   .icans {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 1rem;
   }
   h3 {
     // padding: 0 2rem;
@@ -44,7 +47,7 @@
 .contect-flex {
   display: flex;
   gap: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   p {
     color: aliceblue;
@@ -54,10 +57,10 @@
 
 .implinks {
   display: flex;
-
+  flex-direction: column;
   align-items: start;
   li {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   a {
     color: aliceblue;
@@ -69,9 +72,9 @@
   flex-direction: column;
   align-items: start;
   p {
-    color:var(--white);
+    color: var(--white);
     font-size: 1.4rem;
     margin-bottom: 2rem;
-    text-decoration: underline;
+    // text-decoration: underline;
   }
 }
