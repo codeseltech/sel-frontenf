@@ -1,0 +1,43 @@
+// breakpoint arguement choices:
+// 1em = 16px,
+// [1200 - 1800]px: default
+
+@mixin respond($breakpoint) {
+  // MAX-WIDTH : till this point
+  // ebook 1200px --	75.00em
+  @if $breakpoint==ebook {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  // ebook 920px --	61.25.00em
+  @if $breakpoint==ebookport {
+    @media only screen and (max-width: 57.5em) {
+      @content;
+    }
+  }
+
+  // MAX-WIDTH : till this point
+  // phone 768px	--  48em
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+
+  // MAX-WIDTH : till this point
+  // phone 480px	--  22.5em
+  @if $breakpoint==smd {
+    @media only screen and (max-width: 30em) {
+      @content;
+    }
+  }
+
+  // Min-width: from this point
+  // big-desktop 1800px -- 112.50em
+  @if $breakpoint==big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

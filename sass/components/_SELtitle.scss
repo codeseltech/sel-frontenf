@@ -1,0 +1,40 @@
+.sel-title {
+  // background-color: #d2c8c8;
+  // grid-column: 2/3; //start/end
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  &-logo {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 1rem;
+    @include respond(ebookport) {
+      height: 4.5rem;
+      width: 4.5rem;
+    }
+  }
+  &-name {
+    width: 20rem;
+    position: relative;
+    h1 {
+      font-family: var(--heading);
+      color: var(--grey-600);
+      font-size: 2.75rem;
+      line-height: 0.2;
+      font-weight: 800;
+    }
+    span {
+      font-size: 3rem;
+    }
+    p {
+      position: absolute;
+      left: 2rem;
+      font-family: var(--tag);
+      color: var(--pink);
+      color: var(--grey-900);
+      font-size: 1.5rem;
+    }
+  }
+}

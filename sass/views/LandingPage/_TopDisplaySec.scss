@@ -1,0 +1,77 @@
+.display-section {
+  display: grid;
+  grid-template-columns: 8vw repeat(2, minmax(40vw, min-content)) 8vw;
+  gap: 2rem;
+  
+  position: relative;
+  background-image: url(https://d3mrq04lqrkc1q.cloudfront.net/display-image/dislpaybg1.jpg);
+  background-size: cover;
+  padding: 2rem 0;
+
+  @include respond(ebook) {
+    grid-template-columns: 10vw minmax(80vw, min-content) 10vw;
+    grid-template-rows: repeat(1fr, min-content);
+  }
+
+  .text-content {
+    grid-column: 2/3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: var(--white);
+      margin-bottom: 3rem;
+    }
+    h3{
+      color: var(--grey-900);
+      background-color: #ffffff58;
+      padding: 1rem;
+
+    }
+    p {
+      display: inline;
+      color: var(--white);
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      margin-bottom: 3rem;
+    }
+    #span {
+      font-size: 2rem;
+      font-family: var(--tag);
+    }
+
+    @include respond(ebook) {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      margin: 0 auto;
+      max-width: 90%;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .slide-show {
+    grid-column: 3/4;
+
+    display: grid;
+    align-items: center;
+    justify-content: start;
+
+    .disp-img {
+      padding: 3rem;
+      img {
+        border-radius: 5px;
+      }
+    }
+
+    @include respond(ebook) {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      margin: 0 auto;
+      max-width: 90%;
+      padding-top: 1rem;
+    }
+  }
+}

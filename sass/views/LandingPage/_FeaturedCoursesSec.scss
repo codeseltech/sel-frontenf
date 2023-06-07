@@ -1,0 +1,120 @@
+.FeaturedCoursesTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  h2 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+.featuredCourses-section {
+  @include widthAuto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @include respond(ebook) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(ebookport) {
+    max-width: 90%;
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    max-width: 70%;
+  }
+}
+
+.course {
+  background-color: var(--white);
+  margin-bottom: 2rem;
+  border: 1px solid var(--grey-300);
+  cursor: pointer;
+  // padding: 1rem;
+  position: relative;
+  border-radius: 4px;
+  #img {
+    height: 16rem;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  .title {
+    position: absolute;
+    top: 2rem;
+    color: var(--grey-900);
+    background-color: #ffffffa6;
+    padding: 1rem;
+    color: var(--grey-900);
+    font-family: var(--tag);
+    text-align: center;
+    border-radius: 5px;
+    span {
+      font-family: var(--heading);
+      font-weight: 900;
+      color: var(--pink);
+      display: block;
+    }
+  }
+  .titleName {
+    padding: 1rem;
+    h4 {
+      margin-bottom: 1rem;
+    }
+    .for {
+      color: var(--grey-900);
+      // font-weight: bold;
+      // font-family: var(--tag);
+      border-bottom: 1px solid var(--grey-300);
+      margin-bottom: 2rem;
+    }
+  }
+  .note {
+    font-size: 1.4rem;
+    font-family: var(--subcont);
+    color: var(--grey-900);
+  }
+  .desc {
+    font-family: var(--subcont);
+    margin-bottom: 2rem;
+  }
+  .moreinfo {
+    display: flex;
+    justify-content: space-around;
+    button {
+      background-color: var(--grey-200);
+      color: var(--grey-700);
+      font-size: 1.5rem;
+      &:hover {
+        background-color: var(--grey-600);
+        color: var(--grey-50);
+      }
+      &:active {
+        border: 1px solid var(--pink);
+        outline: none;
+      }
+    }
+  }
+}
+.featured-courses-btn {
+  display: flex;
+  justify-content: center;
+  button {
+    background-color: var(--grey-200);
+    color: var(--grey-900);
+    &:hover {
+      background-color: var(--grey-600);
+      color: var(--grey-50);
+    }
+    &:active {
+      border: 1px solid var(--pink);
+      outline: none;
+    }
+  }
+}

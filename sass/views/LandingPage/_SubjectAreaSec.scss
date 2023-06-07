@@ -1,0 +1,40 @@
+.subjectArea-section {
+  @include widthAuto;
+  .title {
+    padding-top: 2rem;
+  }
+  padding-bottom: 2rem;
+  @include respond(ebookport) {
+    max-width: 90%;
+  }
+  .subject-go {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .subject {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    border: 0.5px solid var(--grey-300);
+    &:hover {
+      background-color: var(--grey-300);
+      color: var(--grey-50);
+    }
+    &:active {
+      border: 1px solid var(--blue-900);
+      outline: none;
+    }
+    h4 {
+      font-family: var(--tag);
+      font-weight: 300;
+      color: var(--grey-900);
+      text-align: center;
+    }
+  }
+}

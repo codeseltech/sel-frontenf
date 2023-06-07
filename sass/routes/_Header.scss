@@ -1,0 +1,32 @@
+.headerBG{
+  background-color: var(--white);
+}
+.header-nav-section {
+  margin: 0 auto;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.headerNavLink {
+  @include respond(ebookport) {
+    display: none;
+  }
+}
+
+// _HeaderNavIcon
+
+.headerNavIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerNavIcon :not(:last-child) {
+  margin-right: 2rem;
+}
+
+// _HeaderNavLink
+.headerNavBar :not(:last-child) {
+  margin-right: 2rem;
+}
