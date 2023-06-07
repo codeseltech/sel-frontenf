@@ -25,7 +25,7 @@ export const subjectList = [
     id: 5,
   },
   {
-    link: '',
+    link: '/dispmsg',
     subject: 'Data Analytics & Web Development',
     id: 6,
   },
