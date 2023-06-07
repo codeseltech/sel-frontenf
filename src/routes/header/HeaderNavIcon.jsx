@@ -4,7 +4,7 @@ import sprite from '../../assets/sprite.svg';
 export const HeaderNavIcon = () => {
   return (
     <div className='headerNavIcon'>
-      <Link to='/search'>
+      <Link to='/dispmsg'>
         <svg className='svg-icon'>
           <use
             className='header-icon-magnifying-glass'
@@ -14,7 +14,7 @@ export const HeaderNavIcon = () => {
       </Link>
 
       <NavLink
-        to='/login'
+        to='/dispmsg'
         className={({ isActive }) =>
           isActive ? 'nav-link nav-link-active' : 'nav-link'
         }
@@ -22,7 +22,7 @@ export const HeaderNavIcon = () => {
         Login
       </NavLink>
 
-      <Link to='/menu'>
+      <Link to='/dispmsg'>
         <svg className='svg-icon'>
           <use className='header-icon-menu' xlinkHref={`${sprite}#icon-menu`} />
         </svg>

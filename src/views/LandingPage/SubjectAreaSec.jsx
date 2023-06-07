@@ -10,11 +10,11 @@ export const SubjectAreaSec = () => {
         {subjectList.map((subjects) => {
           const { link, subject, id } = subjects;
           return (
-            <a href={link} key={id}>
+            <Link to={link} key={id}>
               <div className='subject'>
                 <h4>{subject}</h4>
               </div>
-            </a>
+            </Link>
           );
         })}
       </div>

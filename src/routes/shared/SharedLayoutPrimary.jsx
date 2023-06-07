@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router';
-import { Header } from '../header/Header'
+import { Header } from '../header/Header';
+import { Footer } from '../footer/Footer';
 export const SharedLayoutPrimary = () => {
   return (
     <div>
-      <Header/>
+      <Header />
       <Outlet />
-      <h1>Footer</h1>
+      <Footer />
     </div>
   );
 };

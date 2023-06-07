@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import sprite from '../../assets/sprite.svg';
-import { courses } from '../../data/LandingPage/featuredCourses';
+import { featuredCourses } from '../../data/LandingPage/featuredCourses';
 
 function FeaturedCoursesTitle() {
   return (
@@ -25,7 +25,7 @@ function FeaturedCoursesTitle() {
 const FeaturedCourses = () => {
   return (
     <section className='featuredCourses-section'>
-      {courses.map((course) => {
+      {featuredCourses.map((course) => {
         return <Course {...course} key={course.id} />;
       })}
     </section>
@@ -33,35 +33,45 @@ const FeaturedCourses = () => {
 };
 
 const Course = (props) => {
-  const { url,img, title, level, course, noteFor, description, duration, apply } =
-    props;
+  const {
+    link,
+    img,
+    title,
+    level,
+    course,
+    noteFor,
+    description,
+    duration,
+    mode,
+  } = props;
+
   const handleClick = () => {
     console.log('Div clicked!');
   };
 
   return (
-    <Link to={url}>
-    <section className='course' onClick={handleClick}>
-      <img id='img' src={img} alt='' />
+    <Link to={link}>
+      <section className='course' onClick={handleClick}>
+        <img id='img' src={img} alt='' />
 
-      <div className='center'>
-        <h3 className='title'>
-          {title} <span>{level}</span>
-        </h3>
-      </div>
-      <div className='titleName'>
-        <h4>{course}</h4>
-        <p className='for'>{noteFor}</p>
-        <p className='desc'>{description}</p>
-        <div className='moreinfo'>
-          <div>
-            <p className='note'>{duration}</p>
-            <p className='note'>{apply}</p>
-          </div>
-          <button type='buttob'>{'Explore'}</button>
+        <div className='center'>
+          <h3 className='title'>
+            {title} <span>{level}</span>
+          </h3>
         </div>
-      </div>
-    </section>
+        <div className='titleName'>
+          <h4>{course}</h4>
+          <p className='for'>{noteFor}</p>
+          <p className='desc'>{description}</p>
+          <div className='moreinfo'>
+            <div>
+              <p className='note'>{mode}</p>
+              <p className='note'>{duration}</p>
+            </div>
+            <button type='buttob'>{'Explore'}</button>
+          </div>
+        </div>
+      </section>
     </Link>
   );
 };
@@ -69,7 +79,7 @@ const Course = (props) => {
 const FeaturedCoursesBtn = () => {
   return (
     <div className='featured-courses-btn'>
-      <Link to='/courses'>
+      <Link to='/dispmsg'>
         <button type='button' className='featured-courses-btn'>
           <span className='btnm'>{`Explore all courses`}</span>
         </button>

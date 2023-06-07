@@ -4,7 +4,7 @@ export const HeaderNavLink = () => {
   return (
     <div className='headerNavBar'>
       <NavLink
-        to='/courses'
+        to='/dispmsg'
         className={({ isActive }) =>
           isActive ? 'nav-link nav-link-active' : 'nav-link'
         }
@@ -12,7 +12,7 @@ export const HeaderNavLink = () => {
         Courses
       </NavLink>
       <NavLink
-        to='/insights'
+        to='/dispmsg'
         className={({ isActive }) =>
           isActive ? 'nav-link nav-link-active' : 'nav-link'
         }
@@ -20,7 +20,7 @@ export const HeaderNavLink = () => {
         Insights
       </NavLink>
       <NavLink
-        to='/moreinfo'
+        to='/dispmsg'
         className={({ isActive }) =>
           isActive ? 'nav-link nav-link-active' : 'nav-link'
         }
@@ -28,7 +28,7 @@ export const HeaderNavLink = () => {
         More Info
       </NavLink>
       <NavLink
-        to='/teachonsel'
+        to='/dispmsg'
         className={({ isActive }) =>
           isActive ? 'nav-link nav-link-active' : 'nav-link'
         }

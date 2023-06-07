@@ -1,0 +1,77 @@
+.footerbg {
+  background-color: var(--grey-600);
+}
+.footer-section {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-items: center;
+
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 5rem;
+  @include respond(ebook) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include respond(ebookport) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.followus {
+  display: flex;
+  gap: 1rem;
+
+  flex-direction: column;
+  //   justify-content: center;
+  align-items: center;
+  .icans {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  h3 {
+    // padding: 0 2rem;
+    color: aqua;
+  }
+}
+
+.contect-flex {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  p {
+    color: aliceblue;
+    font-size: 1.4rem;
+  }
+}
+
+.implinks {
+  display: flex;
+
+  align-items: start;
+  li {
+    margin-bottom: 2rem;
+  }
+  a {
+    color: aliceblue;
+    font-size: 1.4rem;
+  }
+}
+.tradmrk {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  p {
+    color:var(--white);
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+  }
+}

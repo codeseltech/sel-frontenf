@@ -1,42 +1,32 @@
 export const subjectList = [
   {
-    link: '/subjectarea/finance&accountancy',
+    link: '/dispmsg',
     subject: 'Finance & Accountancy',
     id: 1,
   },
   {
-    link: '/subjectarea/economics&statistics',
-    subject: `Economics & Statistics `,
+    link: '/dispmsg',
+    subject: 'Economics & Statistics',
     id: 2,
   },
   {
-    link: '/subjectarea/managementstudies',
-    subject: `Business & Management Studies`,
+    link: '/dispmsg',
+    subject: 'Business & Management Studies',
     id: 3,
   },
   {
-    link: '/subjectarea',
-    subject: `Office Productivity`,
+    link: '/dispmsg',
+    subject: 'Office Productivity & Business Reporting',
     id: 4,
   },
   {
-    link: '/subjectarea',
-    subject: 'Taxation',
+    link: '/dispmsg',
+    subject: 'Taxation (Income Tax &GST)',
     id: 5,
   },
   {
-    link: '/subjectarea/cs',
-    subject: `Computer Science (CS)`,
+    link: '',
+    subject: 'Data Analytics & Web Development',
     id: 6,
-  },
-  {
-    link: '/subjectarea/communication&reporting',
-    subject: 'Business Communication & Reporting',
-    id: 7,
-  },
-  {
-    link: '/courses',
-    subject: 'Explore All Subjects',
-    id: 8,
   },
 ];

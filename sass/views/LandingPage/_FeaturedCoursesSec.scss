@@ -69,28 +69,34 @@
     }
     .for {
       color: var(--grey-900);
-      // font-weight: bold;
+      font-weight: 600;
       // font-family: var(--tag);
       border-bottom: 1px solid var(--grey-300);
       margin-bottom: 2rem;
     }
   }
   .note {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: var(--subcont);
     color: var(--grey-900);
+    margin-bottom: 5px;
   }
   .desc {
-    font-family: var(--subcont);
-    margin-bottom: 2rem;
+    font-family: var(--content);
+    margin-bottom: 3rem;
+    padding: 1rem;
+    font-size: 1.6rem;
   }
   .moreinfo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 1rem;
+
     button {
-      background-color: var(--grey-200);
+      background-color: var(--white);
       color: var(--grey-700);
       font-size: 1.5rem;
+      
       &:hover {
         background-color: var(--grey-600);
         color: var(--grey-50);
@@ -106,7 +112,7 @@
   display: flex;
   justify-content: center;
   button {
-    background-color: var(--grey-200);
+    background-color: var(--white);
     color: var(--grey-900);
     &:hover {
       background-color: var(--grey-600);

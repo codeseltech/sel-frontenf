@@ -1,9 +1,13 @@
 import { TopDisplaySec } from './TopDisplaySec';
 import { SubjectAreaSec } from './SubjectAreaSec';
+import { ExpressiveLearning } from './ExpressiveLearningSec';
+
 import FeaturedCoursesTitle, {
   FeaturedCourses,
   FeaturedCoursesBtn,
 } from './FeaturedCoursesSec';
+
+import { TopFAQs } from './TopFaqSec';
 
 export const LandingPage = () => {
   return (
@@ -13,6 +17,8 @@ export const LandingPage = () => {
       <FeaturedCoursesTitle />
       <FeaturedCourses />
       <FeaturedCoursesBtn />
+      <ExpressiveLearning />
+      <TopFAQs />
     </section>
   );
 };

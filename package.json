@@ -9,14 +9,16 @@
     "preview": "vite preview",
     "watch-sass": "sass --watch sass/main.scss src/css/style.css",
     "compile-sass": "sass sass/main.scss css/style.css",
-    "prefix-css": "postcss --use autoprefixer -b 'last 2 versions' css/style.css -o css/index.css",
+    "prefix-css": "postcss --use autoprefixer -b 'last 1 versions' css/style.css -o css/index.css",
     "build-css": "npm-run-all compile-sass prefix-css"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-faq-component": "^1.3.4",
     "react-router": "^6.11.1",
-    "react-router-dom": "^6.11.1"
+    "react-router-dom": "^6.11.1",
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

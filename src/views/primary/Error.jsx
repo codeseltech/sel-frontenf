@@ -6,7 +6,7 @@ export const Error = () => {
     <div className='error-page'>
       <h1>Oops! Something went wrong.</h1>
       <p>We're sorry, but an error occurred.</p>
-      <Link to='/'>Go Home</Link>
+      <Link to='/'>Home Page</Link>
     </div>
   );
 };

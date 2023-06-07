@@ -2,14 +2,13 @@
   display: grid;
   grid-template-columns: 8vw repeat(2, minmax(40vw, min-content)) 8vw;
   gap: 2rem;
-  
+
   position: relative;
   background-image: url(https://d3mrq04lqrkc1q.cloudfront.net/display-image/dislpaybg1.jpg);
   background-size: cover;
-  padding: 2rem 0;
 
   @include respond(ebook) {
-    grid-template-columns: 10vw minmax(80vw, min-content) 10vw;
+    grid-template-columns: 5vw minmax(80vw, min-content) 10vw;
     grid-template-rows: repeat(1fr, min-content);
   }
 
@@ -23,13 +22,18 @@
 
     h1 {
       color: var(--white);
+      color: var(--grey-100);
       margin-bottom: 3rem;
+      // font-family: var(--tag);
     }
-    h3{
-      color: var(--grey-900);
-      background-color: #ffffff58;
+    h3 {
+      // font-family: var(--tag);
+      letter-spacing: 1px;
+      line-height: 1.6;
+      color: var(--grey-100);
+      // background-color: #ffffff58;
       padding: 1rem;
-
+      font-size: 2.5rem;
     }
     p {
       display: inline;
